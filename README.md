@@ -6,34 +6,13 @@ A production-ready Helm-based Kubernetes deployment template for a microservices
 
 ## 📦 Architecture
 
-Markone --> 
-├──> Frontend Service (React/Next.js)
-└──> Backend Service (Node.js)
-└──> MongoDB Database
+Markone
+──> Frontend Service 
+──> Backend Service
+──> MongoDB Database
 
 
 Each component is deployed as a separate Helm subchart, making it modular and easy to maintain.
-
----
-
-## 🧱 Project Structure
-
-markone-helm-microservices/
-├── Chart.yaml
-├── values.yaml
-├── charts/
-│ ├── frontend/
-│ │ ├── templates/
-│ │ └── values.yaml
-│ ├── backend/
-│ │ ├── templates/
-│ │ └── values.yaml
-│ └── database/
-│ ├── templates/
-│ └── values.yaml
-└── templates/
-└── ingress.yaml
-
 
 ---
 
