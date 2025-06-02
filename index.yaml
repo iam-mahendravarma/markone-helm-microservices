@@ -3,17 +3,17 @@ entries:
   mongodb:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-02T12:18:35.21618692+05:30"
+    created: "2025-06-02T12:27:59.905642027+05:30"
     dependencies:
     - name: database
       repository: file://charts/database
       version: 0.1.0
     description: A Helm chart for deploying a microservices stack (React + Node.js
       + MongoDB)
-    digest: dc0c9cb0e7329dbf85c1d015771de11d7e75c0a54a695d63fc7a8d70c3c118b6
+    digest: 223becc574187ff292adcaa311a56030fb9a98a6b629e1354593e3950fbf266b
     name: mongodb
     type: application
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-02T12:18:35.215703974+05:30"
+generated: "2025-06-02T12:27:59.905112823+05:30"
