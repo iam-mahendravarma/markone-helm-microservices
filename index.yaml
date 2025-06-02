@@ -3,7 +3,7 @@ entries:
   markone-helm-microservices:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-02T12:05:04.061883263+05:30"
+    created: "2025-06-02T12:14:36.078835738+05:30"
     dependencies:
     - name: database
       repository: file://charts/database
@@ -14,6 +14,6 @@ entries:
     name: markone-helm-microservices
     type: application
     urls:
-    - https://iam-mahendravarma.github.io/markone-helm-microservices/markone-helm-microservices-0.1.0.tgz
+    - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-02T12:05:04.061446141+05:30"
+generated: "2025-06-02T12:14:36.07773118+05:30"
