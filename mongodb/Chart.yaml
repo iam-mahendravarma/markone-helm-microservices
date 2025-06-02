@@ -1,0 +1,11 @@
+apiVersion: v2
+name: markone-helm-microservices
+description: A Helm chart for deploying a microservices stack (React + Node.js + MongoDB)
+type: application
+version: 0.1.0
+appVersion: "1.0"
+
+dependencies:
+  - name: database
+    version: 0.1.0
+    repository: "file://charts/database"
