@@ -1,101 +1,50 @@
-# Task Management Application
+# 🚀 markone-helm-microservices
 
-A modern task management application built with React.js, FastAPI, and MongoDB.
+A production-ready Helm-based Kubernetes deployment template for a microservices architecture.
 
-## Features
+---
 
-- Create, read, update, and delete tasks
-- Set task priorities and status
-- Add due dates to tasks
-- Beautiful Material-UI interface
-- Real-time updates
-- Responsive design
+## 📦 Architecture
 
-## Prerequisites
+Markone
+──> Frontend Service 
+──> Backend Service
+──> MongoDB Database
 
-- Python 3.8+
-- Node.js 14+
-- MongoDB
 
-## Setup
+Each component is deployed as a separate Helm subchart, making it modular and easy to maintain.
 
-### Backend Setup
+---
 
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
+## 🚀 Getting Started
 
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   ```
+### Prerequisites
 
-3. Activate the virtual environment:
-   - Windows:
-     ```bash
-     .\venv\Scripts\activate
-     ```
-   - Unix/MacOS:
-     ```bash
-     source venv/bin/activate
-     ```
+- Kubernetes cluster (minikube, kind, or cloud provider)
 
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- Helm 3+
 
-5. Create a `.env` file in the backend directory:
-   ```
-   MONGODB_URL=mongodb://localhost:27017
-   ```
+- Docker (for building custom images)
 
-6. Start the backend server:
-   ```bash
-   uvicorn main:app --reload
-   ```
+- Ingress Controller (e.g., NGINX)
 
-### Frontend Setup
+### 1. Clone the repo
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
+git clone https://github.com/iam-mahendravarma/markone-helm-microservices.git
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+cd markone-helm-microservices
 
-3. Start the development server:
-   ```bash
-   npm start
-   ```
+### 2. Package dependencies
 
-The application will be available at:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
+helm dependency update
 
-## API Documentation
+### 3. Install Helm chart
 
-Once the backend server is running, you can access the API documentation at:
-http://localhost:8000/docs
+helm install markone .
 
-## Technologies Used
+### 4. Access the application
 
-- Frontend:
-  - React.js
-  - Material-UI
-  - Axios
-  - React-Toastify
-  - Date-fns
+kubectl port-forward svc/frontend 8080:80
 
-- Backend:
-  - FastAPI
-  - Motor (MongoDB async driver)
-  - Pydantic
-  - Python-dotenv
-
-- Database:
-  - MongoDB 
+Then open: http://localhost:8080
+ 
