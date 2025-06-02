@@ -1,19 +1,19 @@
 apiVersion: v1
 entries:
-  markone-helm-microservices:
+  mongodb:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-02T12:14:36.078835738+05:30"
+    created: "2025-06-02T12:18:35.21618692+05:30"
     dependencies:
     - name: database
       repository: file://charts/database
       version: 0.1.0
     description: A Helm chart for deploying a microservices stack (React + Node.js
       + MongoDB)
-    digest: 35bb41e219c852e675995694ae438fef0baac4d745086d22ce03984d5f705d7b
-    name: markone-helm-microservices
+    digest: dc0c9cb0e7329dbf85c1d015771de11d7e75c0a54a695d63fc7a8d70c3c118b6
+    name: mongodb
     type: application
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-02T12:14:36.07773118+05:30"
+generated: "2025-06-02T12:18:35.215703974+05:30"
