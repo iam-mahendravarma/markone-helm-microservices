@@ -9,3 +9,6 @@ dependencies:
   - name: database
     version: 0.1.0
     repository: "file://charts/database"
+  - name: backend
+    version: 0.1.0
+    repository: "file://charts/backend"
