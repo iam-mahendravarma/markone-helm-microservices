@@ -3,22 +3,27 @@ entries:
   backend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-03T14:43:09.954262472+05:30"
+    created: "2025-06-03T15:03:25.93353853+05:30"
     description: Python backend service for task management
-    digest: e88c1603dad8a3f60fa22c3fa396906c03cdb347fad443aba7b8c93fe9f16412
+    digest: 2a1a41487cc87dcf2e2887b9efa1d92838d855d3096bce98c435231a251d37e8
     name: backend
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/backend-0.1.0.tgz
     version: 0.1.0
-  database:
+  mongodb:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-03T14:43:09.954844001+05:30"
-    description: A MongoDB Helm subchart
-    digest: 61bc6d80c36e32f06713a9e11a331492735d227f1c429259a274275ec811cc62
-    name: database
+    created: "2025-06-03T15:03:25.934572672+05:30"
+    dependencies:
+    - name: database
+      repository: file://charts/database
+      version: 0.1.0
+    description: A Helm chart for deploying a microservices stack (React + Node.js
+      + MongoDB)
+    digest: 223becc574187ff292adcaa311a56030fb9a98a6b629e1354593e3950fbf266b
+    name: mongodb
     type: application
     urls:
-    - https://iam-mahendravarma.github.io/markone-helm-microservices/database-0.1.0.tgz
+    - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-03T14:43:09.953430045+05:30"
+generated: "2025-06-03T15:03:25.933255457+05:30"
