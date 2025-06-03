@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: networkcloud01/task-management-backend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8000
+
+env:
+  MONGO_URI: "mongodb://database:27017/taskdb"
