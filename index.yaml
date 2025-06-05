@@ -3,17 +3,28 @@ entries:
   backend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-03T15:03:25.93353853+05:30"
+    created: "2025-06-05T11:57:34.058291876+05:30"
     description: Python backend service for task management
     digest: 2a1a41487cc87dcf2e2887b9efa1d92838d855d3096bce98c435231a251d37e8
     name: backend
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/backend-0.1.0.tgz
     version: 0.1.0
+  frontend:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-06-05T11:57:34.058861456+05:30"
+    description: Frontend service (React) for MarkOne
+    digest: 8172939bfbf80867515663ab4fbe8d50d84324fc36da12ae58a20e38dfc473aa
+    name: frontend
+    type: application
+    urls:
+    - https://iam-mahendravarma.github.io/markone-helm-microservices/frontend-0.1.0.tgz
+    version: 0.1.0
   mongodb:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-03T15:03:25.934572672+05:30"
+    created: "2025-06-05T11:57:34.059583826+05:30"
     dependencies:
     - name: database
       repository: file://charts/database
@@ -26,4 +37,4 @@ entries:
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-03T15:03:25.933255457+05:30"
+generated: "2025-06-05T11:57:34.057607786+05:30"
