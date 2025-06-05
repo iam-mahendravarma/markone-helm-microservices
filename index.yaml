@@ -3,38 +3,33 @@ entries:
   backend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-05T11:57:34.058291876+05:30"
+    created: "2025-06-05T12:12:09.973360801+05:30"
     description: Python backend service for task management
-    digest: 2a1a41487cc87dcf2e2887b9efa1d92838d855d3096bce98c435231a251d37e8
+    digest: 887502dd200cd3d8e18bb402f4d9ae51674200c8100cea9c5efd5d5971d7b2b2
     name: backend
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/backend-0.1.0.tgz
     version: 0.1.0
+  database:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-06-05T12:12:09.974473671+05:30"
+    description: A MongoDB Helm subchart
+    digest: 66d4431dff3bef13c5cec9d57c2780533066f6f5d3a4b79ef4087794bf87761f
+    name: database
+    type: application
+    urls:
+    - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
+    version: 0.1.0
   frontend:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-05T11:57:34.058861456+05:30"
+    created: "2025-06-05T12:12:09.974005951+05:30"
     description: Frontend service (React) for MarkOne
-    digest: 8172939bfbf80867515663ab4fbe8d50d84324fc36da12ae58a20e38dfc473aa
+    digest: b62e5dee06f4ddd791c4af256bacad9f93265ea51a887d0f4667699785dc2343
     name: frontend
     type: application
     urls:
     - https://iam-mahendravarma.github.io/markone-helm-microservices/frontend-0.1.0.tgz
     version: 0.1.0
-  mongodb:
-  - apiVersion: v2
-    appVersion: "1.0"
-    created: "2025-06-05T11:57:34.059583826+05:30"
-    dependencies:
-    - name: database
-      repository: file://charts/database
-      version: 0.1.0
-    description: A Helm chart for deploying a microservices stack (React + Node.js
-      + MongoDB)
-    digest: 223becc574187ff292adcaa311a56030fb9a98a6b629e1354593e3950fbf266b
-    name: mongodb
-    type: application
-    urls:
-    - https://iam-mahendravarma.github.io/markone-helm-microservices/mongodb-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-06-05T11:57:34.057607786+05:30"
+generated: "2025-06-05T12:12:09.972606861+05:30"
