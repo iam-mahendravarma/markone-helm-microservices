@@ -1,6 +1,6 @@
 apiVersion: v2
 name: mongodb
-description: A Helm chart for deploying a microservices stack (React + Node.js + MongoDB)
+description: A Helm chart for deploying a microservices stack (React + Python + MongoDB)
 type: application
 version: 0.1.0
 appVersion: "1.0"
